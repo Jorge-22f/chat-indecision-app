@@ -1,8 +1,10 @@
 <template>
-    <h1 class="text-3xl font-bold underline">App vue</h1>
+    <IndecisionView />
 </template>
 
 <script lang="ts" setup>
+import IndecisionView from './views/IndecisionView.vue';
+
 </script>
 
 <style scoped></style>
