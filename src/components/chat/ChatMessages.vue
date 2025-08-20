@@ -11,7 +11,7 @@ const { messages } = defineProps<Props>();
 
 const chatRef = ref<HTMLDivElement | null>(null);
 
-watch(messages, () => {
+watch(() => messages, () => {
     setTimeout(() => {
         chatRef.value?.scrollTo({
             top: chatRef.value.scrollHeight,
