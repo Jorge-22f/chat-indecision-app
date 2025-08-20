@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+/* styles/main.css (Archivo CSS global) */
+.btn {
+  @apply p-4 bg-emerald-600 rounded hover:bg-emerald-800;
+}
+.mr-2 {
+  @apply mr-2;
+}
