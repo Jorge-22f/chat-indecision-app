@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 import type { ChatMessage } from '@/interfaces/chat-message.interface';
-// import type { YesNoResponse } from '@/interfaces/yes-no.response';
-// import { sleep } from '@/helpers/sleep';
+import type { YesNoResponse } from '@/interfaces/yes-no.response';
+import { sleep } from '@/helpers/sleep';
 
 export const useChat = () => {
   const messages = ref<ChatMessage[]>([]);
