@@ -1,39 +1,97 @@
-# indecision-app
+# 🧠 Chat Indecision App
 
-This template should help get you started developing with Vue 3 in Vite.
+Una aplicación de práctica desarrollada con **Vue 3 + TypeScript**, donde puedes hacerle preguntas a una "inteligencia indecisa" y recibir respuestas tipo **sí/no**, acompañadas de un **GIF temático**. Ideal para aprender sobre componentes, composables, props y organización de proyectos modernos en Vue.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Características
 
-## Type Support for `.vue` Imports in TS
+- ✅ Preguntas abiertas con respuestas aleatorias tipo "sí" o "no"
+- 🎬 GIFs dinámicos según la respuesta
+- 🧩 Componentes reutilizables
+- 🧠 Composables para lógica desacoplada
+- 📦 Comunicación por props entre componentes
+- 🛡️ Interfaces TypeScript para tipado seguro
+- ⚡️ Scroll automático al recibir nuevos mensajes
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 🖼️ Vista previa
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+> *Próximamente: puedes agregar capturas de pantalla aquí para mostrar la interfaz.*
 
-## Project Setup
+---
 
-```sh
-npm install
+## 🧱 Estructura del proyecto
+
+```bash
+src/
+├── components/       # Componentes visuales como ChatBubble
+├── composables/      # Lógica reutilizable (e.g. manejo de API)
+├── helpers/          # Funciones auxiliares
+├── interfaces/       # Tipos e interfaces TypeScript
+├── views/            # Vistas principales
+├── App.vue           # Componente raíz
+└── main.ts           # Punto de entrada
 ```
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
+## 🛠️ Tecnologías utilizadas
+
+- [Vue 3](https://vuejs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Giphy API](https://developers.giphy.com/) *(para los GIFs)*
+
+---
+
+## 📦 Instalación
+
+```bash
+# Clona el repositorio
+git clone https://github.com/Jorge-22f/chat-indecision-app.git
+
+# Entra al proyecto
+cd chat-indecision-app
+
+# Instala dependencias
+npm install
+
+# Corre el servidor de desarrollo
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 🧪 ¿Cómo funciona?
 
-### Lint with [ESLint](https://eslint.org/)
+1. El usuario escribe en la caja de texto, si finaliza con una incognita ?.
+2. La app consulta una API externa que responde con "sí" o "no".
+3. Se muestra la respuesta junto con un GIF relacionado.
+4. El componente de mensajes se actualiza y hace scroll automático.
 
-```sh
-npm run lint
-```
+---
+
+## 📚 Aprendizajes clave
+
+- Uso de `defineProps` y `defineEmits` en `<script setup>`
+- Manejo de reactividad con `ref`, `watch` y `computed`
+- Buenas prácticas con TypeScript en Vue
+- Modularización y separación de responsabilidades
+
+---
+
+## 🤝 Autor
+
+**Jorge** – apasionado por el diseño de sistemas escalables, aprendiz técnico y explorador de buenas prácticas en desarrollo web.
+
+---
+
+## 📄 Licencia
+
+Este proyecto es de uso educativo y libre. Puedes modificarlo, compartirlo y adaptarlo como desees.
+
+---
+
+¿Quieres que te ayude a agregar una sección de capturas, documentación técnica o incluso una guía para extender la app con respuestas más inteligentes? Podemos hacerlo juntos.
